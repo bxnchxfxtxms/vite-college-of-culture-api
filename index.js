@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path')
 const serveStatic = require('serve-static')
 
-const router = require('./router.js');
+// const router = require('./router.js');
 
 const { PORT = 3000, BASE_PATH } = process.env;
 
@@ -14,7 +14,9 @@ const allowedCors = [
 
 const app = express();
 
-app.use(serveStatic(path.join(__dirname, '../vite-college-of-culture-frontend/src')));
+app.use('/api', require('../router'));
+
+app.use(serveStatic(path.join(__dirname, 'public')));
 // app.use(serveStatic(path.join(__dirname, 'publicTest')));
 
 // app.use(express.static('public'))
