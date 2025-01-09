@@ -16,6 +16,8 @@ const app = express();
 
 app.use('/api', require('../router'));
 
+app.use(router)
+
 app.use(serveStatic(path.join(__dirname, 'public')));
 
 // app.use(express.static('public'))
