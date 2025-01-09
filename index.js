@@ -16,9 +16,8 @@ const app = express();
 
 app.use('/api', require('../router'));
 
-app.use(router)
-
-app.use('/Vacancy')
+app.use('/dick', require('../router'));
+app.use('/Vacancy', require('../router'));
 
 app.use(serveStatic(path.join(__dirname, 'public')));
 
