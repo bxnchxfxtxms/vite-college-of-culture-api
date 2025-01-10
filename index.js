@@ -16,12 +16,12 @@ const allowedCors = [
 
 const app = express();
 
-app.use('/api', require('../router'));
+// app.use('/api', require('../router'));
 
-app.use('/dick', require('../router'));
-app.use('/Vacancy', require('../router'));
+// app.use('/dick', require('../router'));
+// app.use('/Vacancy', require('../router'));
 
-app.use(serveStatic(path.join(__dirname, 'public')));
+// app.use(serveStatic(path.join(__dirname, 'public')));
 
 // app.use(express.static('public'))
 
