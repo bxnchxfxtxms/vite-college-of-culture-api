@@ -7,6 +7,8 @@ const router = require('./router.js');
 const { PORT = 3000, BASE_PATH } = process.env;
 
 const allowedCors = [
+  'http://api-college-lvova.online',
+  'https://api-college-lvova.online',
   'http://колледжльвова.рф',
   'https://колледжльвова.рф',
   'localhost:3000',
